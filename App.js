@@ -30,7 +30,7 @@ export default function App() {
     let newMessage = 
     [
       {
-        _id: messages.length + 1,
+        _id: new Date().valueOf(),
         text: replies[Math.floor(Math.random() * replies.length)],
         createdAt: new Date(),
         user: {
